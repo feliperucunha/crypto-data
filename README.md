@@ -24,7 +24,7 @@
     <a href="https://github.com/feliperucunha/crypto-data"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="crypto-data-iota.vercel.app">View Demo</a>
+    <a href="https://crypto-data-iota.vercel.app">View Demo</a>
     ·
     <a href="https://github.com/feliperucunha/crypto-data/issues">Report Bug</a>
     ·
@@ -229,7 +229,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-shield]: https://img.shields.io/github/issues/feliperucunha/crypto-data.svg?style=for-the-badge
 [issues-url]: https://github.com/feliperucunha/crypto-data/issues
 [license-shield]: https://img.shields.io/github/license/feliperucunha/crypto-data.svg?style=for-the-badge
-[license-url]: https://github.com/feliperucunha/crypto-data/master/LICENSE.txt
+[license-url]: https://github.com/feliperucunha/crypto-data/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [product-screenshot]: images/screenshot.png
 
