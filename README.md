@@ -5,7 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin]
 
 
 
@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/feliperucunha/crypto-data">
-    <img src="images/cryptodata.png" alt="Logo" width="80" height="80">
+    <img src="src/images/cryptodata.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CryptoData</h3>
@@ -178,17 +178,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Author
 
 <a href="https://github.com/feliperucunha">
@@ -205,9 +194,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [<img align="left" alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
 [<img align="left" alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />][telegram]
 [<img align="left" alt="Whatsapp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />][whatsapp]
-[<img align="left" alt="Instagram" src="https://img.shields.io/badge/<feliperucunha>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />][instagram]
-
-Project Link: [https://github.com/feliperucunha/crypto-data](https://github.com/feliperucunha/crypto-data)
+[<img align="left" alt="Instagram" src="https://img.shields.io/badge/<feliperucunha>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />][instagram] 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -242,11 +229,9 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-shield]: https://img.shields.io/github/issues/feliperucunha/crypto-data.svg?style=for-the-badge
 [issues-url]: https://github.com/feliperucunha/crypto-data/issues
 [license-shield]: https://img.shields.io/github/license/feliperucunha/crypto-data.svg?style=for-the-badge
-[license-url]: https://github.com/feliperucunha/crypto-data/blob/master/LICENSE.txt
+[license-url]: https://github.com/feliperucunha/crypto-data/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/feliperucunha
 [product-screenshot]: images/screenshot.png
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=feliperucunha&layout)
 
 [whatsapp]: https://wa.me/5591987485395
 [telegram]: https://t.me/Felipecunha04
