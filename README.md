@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/feliperucunha/crypto-data">
+  <a href="https://github.com/feliperucunha/crypto-data/blob/main/LICENSE.txt">
     <img src="src/images/cryptodata.png" alt="Logo" width="80" height="80">
   </a>
 
