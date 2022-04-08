@@ -1,70 +1,256 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/feliperucunha/crypto-data">
+    <img src="images/cryptodata.png" alt="Logo" width="80" height="80">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h3 align="center">CryptoData</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <p align="center">
+    An awesome crypto dashboard to look for crypto data
+    <br />
+    <a href="https://github.com/feliperucunha/crypto-data"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="crypto-data-iota.vercel.app">View Demo</a>
+    ·
+    <a href="https://github.com/feliperucunha/crypto-data/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/feliperucunha/crypto-data/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+  </ol>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run eject`
+There are many crypto dashboards out there, but I wanted to build one of my own with actual
+functionality so this is the result. It can look for top cryptos, specific ones and show information about them.
+Also it has a news tab with some news about crypto brought by bing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built With
 
-## Learn More
+This section should list any major frameworks/libraries used to build this project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [React.js](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Ant.Design](https://ant.design/)
+* [Moment.js](https://momentjs.com/)
+* [Chart.js](https://www.chartjs.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- GETTING STARTED -->
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To get a local copy up and running follow these simple example steps.
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+First of all you need the package manager NPM, to install it use the command below:
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Advanced Configuration
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Get a free API Key at [https://rapidapi.com](https://rapidapi.com) for CoinRanking and Bing Search
+2. Clone the repo
+   ```sh
+   git clone https://github.com/feliperucunha/crypto-data.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `.env`
+   ```js
+   REACT_APP_RAPIDAPI_KEY = 'ENTER YOUR API'
+   REACT_APP_CRYPTO_API_URL = 'ENTER YOUR API'
+   REACT_APP_NEWS_API_URL = 'ENTER YOUR API'
+   REACT_APP_NEWS_RAPIDAPI_HOST = 'ENTER YOUR API'
+   REACT_APP_CRYPTO_RAPIDAPI_HOST = 'ENTER YOUR API'
+   ```
 
-### Deployment
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- USAGE EXAMPLES -->
+## Usage
+
+The home page has some top information about coins and some news.
+This dashboard is pretty straight forward. You can access anything through the navbar and click on any card
+to see the specific details about a coin. You can also check the news on the news tab.
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ROADMAP -->
+<!-- ## Roadmap
+
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
+
+See the [open issues](https://github.com/feliperucunha/crypto-data/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p> -->
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Author
+
+<a href="https://github.com/feliperucunha">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51034888?s=400&u=d957f24c0607b08051d57bd562e17db9cf811421&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Felipe Cunha</b></sub></a>
+ <br />
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contact
+
+[<img align="left" alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:feliperubenmv@gmail.com?subject=[GitHub]%20Hey,%20Felipe%20Cunha)
+[<img align="left" alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
+[<img align="left" alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />][telegram]
+[<img align="left" alt="Whatsapp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />][whatsapp]
+[<img align="left" alt="Instagram" src="https://img.shields.io/badge/<feliperucunha>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />][instagram]
+
+Project Link: [https://github.com/feliperucunha/crypto-data](https://github.com/feliperucunha/crypto-data)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+<!-- ## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#top">back to top</a>)</p> -->
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/feliperucunha/crypto-data.svg?style=for-the-badge
+[contributors-url]: https://github.com/feliperucunha/crypto-data/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/feliperucunha/crypto-data.svg?style=for-the-badge
+[forks-url]: https://github.com/feliperucunha/crypto-data/network/members
+[stars-shield]: https://img.shields.io/github/stars/feliperucunha/crypto-data.svg?style=for-the-badge
+[stars-url]: https://github.com/feliperucunha/crypto-data/stargazers
+[issues-shield]: https://img.shields.io/github/issues/feliperucunha/crypto-data.svg?style=for-the-badge
+[issues-url]: https://github.com/feliperucunha/crypto-data/issues
+[license-shield]: https://img.shields.io/github/license/feliperucunha/crypto-data.svg?style=for-the-badge
+[license-url]: https://github.com/feliperucunha/crypto-data/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/feliperucunha
+[product-screenshot]: images/screenshot.png
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=feliperucunha&layout)
+
+[whatsapp]: https://wa.me/5591987485395
+[telegram]: https://t.me/Felipecunha04
+[twitter]: https://twitter.com/feliperubeen
+[youtube]: https://youtube.com/
+[instagram]: https://www.instagram.com/feliperubeen
+[linkedin]: https://www.linkedin.com/in/feliperubencunha/
