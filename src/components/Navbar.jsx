@@ -1,45 +1,53 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState  } from 'react';
+import { Button, Menu, Typography, Avatar } from 'antd';
+import { Link } from 'react-router-dom';
+import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
+import icon from '../images/cryptodata.png';
 
-function Header(props) {
-  const [navbarColor, setNavbarColor] = useState(false);
-
-  const changeBackgroundColor = () => {
-    if (window.scrollY >= 479 ) {
-      setNavbarColor(true)
-    }
-    if (window.scrollY < 479 ) {
-      setNavbarColor(false)
-    }
-  };
+const Navbar = () => {
+  const [activeMenu, setActiveMenu] = useState(true);
+  const [screenSize, setScreenSize] = useState(undefined);
 
   useEffect(() => {
-    window.addEventListener('scroll', changeBackgroundColor)
-  });
+    const handleResize = () => setScreenSize(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (screenSize <= 800) {
+      setActiveMenu(false);
+    } else {
+      setActiveMenu(true);
+    }
+  }, [screenSize]);
 
   return (
-    <header className={`${navbarColor ? '!bg-white ' : 'bg-slate-200 '}flex justify-between p-5 max-w-7xl mx-auto ${props.whiteBg ? '!bg-white' : 'bg-yellow-500 border-y border-black sticky top-0 z-50'}`}>
-      <div className='flex items-center space-x-5'>
-        <a href="/"> 
-          <div className='flex object-contain items-center cursor-pointer'>
-            <img 
-              className="w-28"
-              src="/images/logo.svg"
-              alt="logo"
-            />
-          </div>
-        </a>
+    <div className="nav-container">
+      <div className="logo-container">
+        <Avatar src={icon} size="large" />
+        <Typography.Title level={2} className="logo"><Link to="/">CryptoData</Link></Typography.Title>
+        <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
-      <div className='flex items-center space-x-5 text-black'>
-        <div className='hidden md:inline-flex items-center space-x-5 font-extralight'>
-          <span className='cursor-pointer'>Soluções</span>
-          <span className='cursor-pointer'>Blog</span>
-          <span className='cursor-pointer'>Contato</span>
-          <span className='cursor-pointer'>Seja Parceiro</span>
-          <span className='cursor-pointer'>Ajuda</span>
-        </div>
-      </div>
-    </header>
+      {activeMenu && (
+      <Menu theme="dark">
+        <Menu.Item icon={<HomeOutlined />}>
+          <Link to="/">Home</Link>
+        </Menu.Item>
+        <Menu.Item icon={<FundOutlined />}>
+          <Link to="/cryptocurrencies">Crypto Currencies</Link>
+        </Menu.Item>
+        <Menu.Item icon={<BulbOutlined />}>
+          <Link to="/news">News</Link>
+        </Menu.Item>
+      </Menu>
+      )}
+    </div>
   )
 }
 
-export default Header
+export default Navbar

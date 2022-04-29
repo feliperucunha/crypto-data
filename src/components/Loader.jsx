@@ -1,8 +1,9 @@
 import React from 'react';
+import { Spin } from 'antd';
 
 const Loader = () => (
-  <div className="flex object-cover justify-center bg-initial">
-    <img src="./images/loading.gif" alt="" />
+  <div className="loader">
+    <Spin />
   </div>
 );
 
